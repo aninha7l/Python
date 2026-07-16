@@ -1,0 +1,13 @@
+copo1= "Laranja"
+copo2 = "Acerola"
+
+#cria um copo temporario para guardar o suco de Laranja
+copo3 = copo1
+
+#passa o suco de acerola para o copo 1
+copo1 = copo2
+
+#passa o suco de laranja para o copo 2 
+copo2 = copo3
+print("Copo1 : ", copo1)
+print ("Copo 2 : ", copo2)
