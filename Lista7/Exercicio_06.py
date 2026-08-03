@@ -1,5 +1,5 @@
 kwh = int(input("Digite a quantidade de kwh consumidos:"))
-tipo = str(input("Digite o tipo de instalacao (R, I ou C):"))
+tipo = str(input("Digite o tipo de instalacao (R, I ou C):")).upper()
 if tipo == "R" and kwh <= 500:
   preco = 0.40
 elif kwh > 500:
