@@ -1,10 +1,14 @@
+#Pede para o usuario digitar o numero do CPF
 cpf =input("Digite o numero do seu CPF: ")
+#Verifica se o CPF possui 11 digitos e se possui apenas numeros
 if len(cpf) !=11 or not cpf.isidigit():
     print("CPF invalido")
 elif cpf == cpf[0] * 11:
     print("CPF invalido")
+
 else:
  numeros = [int(d) for d in cpf]
+ #calculo do primeiro digito
  soma =0
  peso=10
  for numero in numeros[:9]:
@@ -15,6 +19,8 @@ else:
         digito1 =0
  else:
         digito1 =11 - resto
+
+        #calcula o segundo digito 
  soma =0
  peso =11
  for numero in numeros[:9] + [digito1]:

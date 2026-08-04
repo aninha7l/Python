@@ -1,15 +1,22 @@
+#comeca a quantidade e a soma com zeros
 numeros = int (input("Digite a quantidade de numeros:"))
 quantidade= 0
 soma= 0
-
+#repete ate o usuario digitar 0
 while numeros!=0:
+ #Conta mais um numero digitado
  quantidade=1
+ #Soma o numero digitado
 soma+=numeros
 numeros = int (input("Digite a quantidade de numeros:"))
+#Verifica se foi digitado pelo menos um numero  
 if quantidade>0:
+ #calcula a media
  media =soma/quantidade
 else:
+ #Se nao digitou nenhum numero ,a media sera 0
  media= 0
+ #mostra os resultados
 print(f"A quantidade de numeros digitados foi: {quantidade}")
 print(f"A soma dos numeros digitados foi: {soma}")
 print(f"A media dos numeros digitados foi: {media:.2f}")
